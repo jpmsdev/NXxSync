@@ -1,21 +1,37 @@
 # NXxSync
 
-Homebrew written in C++ to sync files.
+A free multi-protocol file synchronization and backup utility written in C++ for libnx-compatible environments.
 
-The app performs **WebDAV** sync/transfers using a job queue (backup/restore/sync) and provides UI screens to manage **Clients** and **Nodes**.
+**NXxSync** allows you to seamlessly back up, restore, and synchronize local directories with remote servers directly from your device. The application operates using an asynchronous job queue, ensuring stable network transfers without freezing the user interface.
 
+## 🚀 Features
 
-## Usage
-- Copy `build/NXxSync.nro` to `switch/` on the SD card.
+* **Multi-Protocol Architecture:** Engine designed to support multiple network protocols. 
+  * 🟢 **WebDAV:** Fully implemented and supported (Current release).
+  * 🟡 **Future Protocols:** Planned support for FTP, SFTP, and SMB/Samba.
+* **Smart Job Queue:** Robust background transfer manager with Play, Pause, Retry All, and Cancel All capabilities.
+* **Dynamic Node Management:** Configure source and destination mappings with three flexible actions:
+  * **Backup:** Uploads local files to your secure Backup Path and publishes to the Remote Path.
+  * **Restore:** Downloads data from the Remote Path directly back to your Local Path.
+  * **Sync:** Performs a safe bi-directional cycle (Uploads current state to Backup Path, restores updates from Remote Path, and refreshes the remote repository).
+* **Power Management:** Includes a "Sleep on Done" toggle that automatically puts the device into system sleep (`appletRequestToSleep`) once all queue tasks are successfully completed.
+* **UI/UX Optimized:** Clean interface featuring real-time progress bars, ETA calculation, and dynamic path tail display.
 
+## 📂 Installation
 
-## Features
+1. Download the latest `NXxSync.nro` from the [Releases](../../releases) section.
+2. Copy the `.nro` file into the `/switch/` directory on your SD card.
+3. Launch via your preferred homebrew menu.
 
-- **Home**: shortcuts to Clients, Nodes, and Transfer.
-- **Clients**: server configuration.
-- **Nodes**: path configuration (Local Path, Remote Path, Backup Path) + actions:
-  - **Backup**: uploads files to **Backup Path** and, when finished, publishes to **Remote Path**.
-  - **Restore**: downloads from **Remote Path** to **Local Path**.
-  - **Sync**: uploads to **Backup Path**, restores from **Remote Path**, then publishes the new backup to **Remote Path**.
-- **Transfer**: runs the queue (Play/Pause), Retry All, Cancel All, footer with progress/ETA and current file name (shows only the tail of the path).
-- **Header**: **Sleep on done?** toggle to enter system sleep when transfers finish (uses `appletRequestToSleep`; on failure or old firmware, exits the app instead).
+## 🛠️ Configuration
+
+* **Clients:** Set up your remote server addresses, ports, and credentials.
+* **Nodes:** Define your local-to-remote folder pairings and assign their respective backup behaviors.
+
+---
+
+## ⚖️ Disclaimer
+
+This is an independent utility developed strictly for personal data backup, synchronization, and system interoperability. It is not affiliated, associated, authorized, endorsed by, or in any way officially connected with any console manufacturer or its subsidiaries. 
+
+Provided "as-is" without warranties of any kind. Use at your own risk.
