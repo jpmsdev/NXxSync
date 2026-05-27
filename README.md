@@ -25,7 +25,8 @@ A free multi-protocol file synchronization and backup utility written in C++ for
 
 ## 🛠️ Configuration
 
-* **Clients:** Set up your remote server addresses, ports, and credentials.
+* **Clients:** Set up your remote server addresses, ports, and credentials. 
+  * _Note: While the "New Client" template comes pre-configured for Koofr WebDAV for quick testing, NXxSync works with any standard WebDAV server (Nextcloud, OwnCloud, NAS, etc.)._
 * **Nodes:** Define your local-to-remote folder pairings and assign their respective backup behaviors.
 
 ---
