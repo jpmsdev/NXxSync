@@ -7,10 +7,10 @@ A free multi-protocol file synchronization and backup utility written in C++ for
 ## 🚀 Features
 
 * **Multi-Protocol Architecture:** Engine designed to support multiple network protocols. 
-  * 🟢 **WebDAV:** Fully implemented and supported.
-  <!--* 🟢 **MEGA:** Fully implemented and supported (Direct authentication/End-to-End encrypted).-->
+  * 🟢 **WebDAV:** Supported.
+  * 🟢 **MEGA:** Supported.
   
-  * 🟡 **Future Protocols:** Planned support for MEGA, FTP, SFTP, and SMB/Samba.
+  * 🟡 **Future Protocols:** Planned support for FTP, SFTP, and SMB/Samba.
 * **Smart Job Queue:** Robust background transfer manager with Play, Pause, Retry All, and Cancel All capabilities.
 * **Dynamic Node Management:** Configure source and destination mappings with three flexible actions:
   * **Backup:** Uploads local files to your secure Backup Path and publishes to the Remote Path.
