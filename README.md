@@ -53,6 +53,6 @@ Provided "as-is" without warranties of any kind. Use at your own risk.
 <!-- REMOVE OR KEEP THIS SECTION IF YOU DID NOT USE THE OFFICIAL MEGA SDK -->
 ## 📜 License & Acknowledgments
 
-This project is licensed under the [Your License, e.g., MIT License].
+<!-- This project is licensed under the [Your License, e.g., MIT License]. -->
 
 * This software may include code or libraries from the **MEGA SDK**, Copyright (c) 2012-2026 Mega Limited, used under the BSD 2-Clause License.
