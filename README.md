@@ -8,7 +8,7 @@ A free multi-protocol file synchronization and backup utility written in C++ for
 
 * **Multi-Protocol Architecture:** Engine designed to support multiple network protocols. 
   * 🟢 **WebDAV:** Supported.
-  * 🟢 **MEGA:** Supported.
+  * 🟢 **MEGA:** Supported on version 1.2.0. Limit 1 thread.
   
   * 🟡 **Future Protocols:** Planned support for FTP, SFTP, and SMB/Samba.
 * **Smart Job Queue:** Robust background transfer manager with Play, Pause, Retry All, and Cancel All capabilities.
