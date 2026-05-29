@@ -17,7 +17,6 @@ A free multi-protocol file synchronization and backup utility written in C++ for
   * **Restore:** Downloads data from the Remote Path directly back to your Local Path.
   * **Sync:** Performs a safe bi-directional cycle (Uploads current state to Backup Path, restores updates from Remote Path, and refreshes the remote repository).
 * **Power Management:** Includes a "Sleep on Done" toggle that automatically puts the device into system sleep (`appletRequestToSleep`) once all queue tasks are successfully completed.
-* **UI/UX Optimized:** Clean interface featuring real-time progress bars, ETA calculation, and dynamic path tail display.
 
 ## 📂 Installation
 
