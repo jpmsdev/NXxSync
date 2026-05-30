@@ -16,7 +16,7 @@ A free multi-protocol file synchronization and backup utility.
   * **Backup:** Uploads local files to your secure Backup Path and publishes to the Remote Path.
   * **Restore:** Downloads data from the Remote Path directly back to your Local Path.
   * **Sync:** Performs a safe bi-directional cycle (Uploads current state to Backup Path, restores updates from Remote Path, and refreshes the remote repository).
-* **Power Management:** Includes a "Sleep on Done" toggle that automatically puts the device into system sleep (`appletRequestToSleep`) once all queue tasks are successfully completed.
+* **Power Management:** Includes a "Sleep on Done" toggle that automatically puts the device into system sleep once all queue tasks are completed.
 
 ## 📂 Installation
 
