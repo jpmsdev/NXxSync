@@ -1,6 +1,6 @@
 # NXxSync
 
-A free multi-protocol file synchronization and backup utility written in C++ for libnx-compatible environments.
+A free multi-protocol file synchronization and backup utility.
 
 **NXxSync** allows you to seamlessly backup, restore, and synchronize local directories with remote servers directly from your device. The application operates using an asynchronous job queue, ensuring stable network transfers without freezing the user interface.
 
