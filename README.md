@@ -4,6 +4,8 @@ A free multi-protocol file synchronization and backup utility.
 
 **NXxSync** allows you to seamlessly backup, restore, and synchronize local directories with remote servers directly from your device. The application operates using an asynchronous job queue, ensuring stable network transfers without freezing the user interface.
 
+**v2.0.0** · by **jpmsdev**
+
 ## 🚀 Features
 
 * **Multi-Protocol Architecture:** Engine designed to support multiple network protocols. 
@@ -13,10 +15,11 @@ A free multi-protocol file synchronization and backup utility.
   
 * **Smart Job Queue:** Robust background transfer manager with Play, Pause, Retry All, and Cancel All capabilities.
 * **Dynamic Node Management:** Configure source and destination mappings with three flexible actions:
-  * **Backup:** Uploads local files to your secure Backup Path and publishes to the Remote Path.
-  * **Restore:** Downloads data from the Remote Path directly back to your Local Path.
-  * **Sync:** Performs a safe bi-directional cycle (Uploads current state to Backup Path, restores updates from Remote Path, and refreshes the remote repository).
-* **Power Management:** Includes a "Sleep on Done" toggle that automatically puts the device into system sleep once all queue tasks are completed.
+  * **Backup**
+  * **Restore**
+  * **Sync**
+* **Home Screen:** Quick launch for save and folder nodes, with touch and controller support.
+* **Power Management:** Includes a "Sleep on Done" toggle that automatically puts the device into system sleep once all queue tasks are completed (30 s countdown).
 
 ## 📂 Installation
 
@@ -26,10 +29,11 @@ A free multi-protocol file synchronization and backup utility.
 
 ## 🛠️ Configuration
 
-* **Clients:** Set up your remote server addresses, ports, and credentials. 
-  * _Note for WebDAV: While the "New Client" template comes pre-configured for Koofr WebDAV for quick testing, NXxSync works with any standard WebDAV server (Nextcloud, OwnCloud, NAS, etc.)._
+* **Servers:** Set up your remote server addresses, ports, and credentials. 
+  * _Note for WebDAV: While the "New Server" template comes pre-configured for Koofr WebDAV for quick testing, NXxSync works with any standard WebDAV server (Nextcloud, OwnCloud, NAS, etc.)._
   * _Note for MEGA: Authentication is handled locally and securely. Input your credentials to establish a direct encrypted session with MEGA servers._
-* **Nodes:** Define your local-to-remote folder pairings and assign their respective backup behaviors.
+* **Nodes:** Define your local-to-remote folder pairings and assign their respective backup behaviors (Simple or Secure sync, optional include/exclude paths, threads, and retry settings).
+* **`NXxSync.json`:** Schema version **2** (`servers` / `server` fields). Legacy version 1 configs using `clients` / `client` are still read and upgraded automatically.
 
 ---
 
