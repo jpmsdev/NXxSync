@@ -13,7 +13,7 @@ A free multi-protocol file synchronization and backup utility.
   * 🟢 **FTP, FTPS and SFTP**
   * 🟢 **MEGA**
   
-* **Smart Job Queue:** Robust background transfer manager with Play, Retry All, and Cancel All capabilities.
+* **Smart Job Queue:** Robust background transfer manager with Play, Pause, Retry All, and Cancel All capabilities.
 
 * **Dynamic Node Management:** Configure source and destination mappings with three flexible actions:
   * **Backup**
