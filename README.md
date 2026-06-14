@@ -4,7 +4,7 @@ A free multi-protocol file synchronization and backup utility.
 
 **NXxSync** allows you to seamlessly backup, restore, and synchronize local directories with remote servers directly from your device. The application operates using an asynchronous job queue, ensuring stable network transfers without freezing the user interface.
 
-**v2.0.0** · by **jpmsdev**
+**v2** · by **jpmsdev**
 
 ## 🚀 Features
 
@@ -13,12 +13,17 @@ A free multi-protocol file synchronization and backup utility.
   * 🟢 **FTP, FTPS and SFTP**
   * 🟢 **MEGA**
   
-* **Smart Job Queue:** Robust background transfer manager with Play, Pause, Retry All, and Cancel All capabilities.
+* **Smart Job Queue:** Robust background transfer manager with Play, Retry All, and Cancel All capabilities.
+
 * **Dynamic Node Management:** Configure source and destination mappings with three flexible actions:
   * **Backup**
   * **Restore**
   * **Sync**
-* **Home Screen:** Quick launch for save and folder nodes, with touch and controller support.
+* **Synchronization**
+  * **Simple**: Uses the remote path as the synchronization path.
+  * **Secure**: Creates synchronization and backup folders on the server and synchronizes all files on every run.
+  * **Incremental**: Works like **Secure**, but synchronizes only modified files.
+* **Home Screen:** Quick access to synchronization, saves, and folder nodes.
 * **Power Management:** Includes a "Sleep on Done" toggle that automatically puts the device into system sleep once all queue tasks are completed (30 s countdown).
 
 ## 📂 Installation
